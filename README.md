@@ -20,9 +20,9 @@ At its core this code is using the ***globus-api examples/tutorial*** with a few
 ## Setup
 
 1. Just clone the repository (all you really need is the GOdummy.py wrapper, but some examples are provided)
-   ``` 
-            git clone https://github.com/georgemm01/GOdummy.git
-	    ```
+	``` 
+        git clone https://github.com/georgemm01/GOdummy.git
+	```
     
 2. Make sure that ```GOdummy.py``` is in your ```PYTHONPATH```, or in your working area, so that you can import it to your script
 
