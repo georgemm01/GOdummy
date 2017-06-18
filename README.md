@@ -3,10 +3,10 @@ Globus API Wrapper for Dummies
 Jorge D. Morales<br>
 06/18/2017<br>
 
-This is a minimally simplfied globus wrapper. The idea is to simplify the usage for just moving data from a python script (or notebook). 
+This is a minimally simplified globus wrapper. The idea is to simplify the usage for just moving data from a python script (or notebook). 
 
 The guide assumes that you already have a GO account, and the **globusonline-transfer-api-client**. 
-At its core this wrapper is using the globus-api examples/tutorial with a few added wrappers, if you read the GOdummy.py it will be easy to tell, as the name implies, this is just a simplified wrapper. 
+At its core this code is using the ***globus-api examples/tutorial*** with a few added wrapping functions, if you read the ```GOdummy.py``` it will be easy to tell. As the name implies, **this is just a simplified wrapper**. 
 
 
 ---
