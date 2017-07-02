@@ -239,9 +239,13 @@ def GOTransfer( gotransf , quiet=True):
         print "=== Transfer Submitted ==="
         display_task(task_id, False); print
 
-    timeout = gotransf.deadline - datetime.utcnow()
-    timeout = int( timeout.total_seconds()/1 + 1) 
-    status = wait_for_task(task_id, timeout=timeout)
+    timeout=gotransf.deadline - datetime.utcnow()
+    timeout=int(timeout.total_seconds()/1 +1)
+    poll_i=30
+    t_res=timeout % poll_i
+    timeout=timeout+poll_i-t_res
+    
+    status = wait_for_task(task_id, timeout=timeout, poll_interval=poll_i)
 
     if status is None:
         # Task didn't complete before the timeout.
