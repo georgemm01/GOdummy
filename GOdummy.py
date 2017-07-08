@@ -222,11 +222,11 @@ def GOendpoints(epoint1,epoint2):
     display_activation(epoint2)
     
 # Now prepare a transfer
-def GOpreTransfer(epoint1,epoint2,timeout=10):
+def GOpreTransfer(epoint1,epoint2,timeout=10, label='GOdummy Transfer'):
     code, message, data = api.transfer_submission_id()
     submission_id = data["value"]
     deadline = datetime.utcnow() + timedelta(minutes=timeout)
-    gotransf = Transfer(submission_id, epoint1, epoint2, deadline)
+    gotransf = Transfer(submission_id, epoint1, epoint2, deadline, label=label)
     return gotransf
 #the user should 'add items' by doing:  gotransf.add_item("srcfile","destfile")
     
