@@ -14,7 +14,7 @@ At its core this code is using the ***globus-api examples/tutorial*** with a few
 
 1. Python 2.6 or 2.7 (the globus API is not supporting 3.x)
 2. A [Globus Online](https://www.globus.org/app/account) account (just click and get one)
-3. The [globus transfer-api-client](https://github.com/globusonline/transfer-api-client-python) (just install with pip as instructed in the link)
+3. The [globus transfer-api-client](https://github.com/globusonline/transfer-api-client-python) (just install with pip as instructed in the link) (if pip isn't available, clone the repository and build with ```python setup.py install --user```)
 4. Access to two end points, at least one has to be a static endpoint, one of them can be a [personal endpoint](https://www.globus.org/globus-connect-personal).
 
 ## Setup
