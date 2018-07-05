@@ -240,7 +240,7 @@ def GOTransfer( gotransf , quiet=True):
         display_task(task_id, False); print
 
     timeout=gotransf.deadline - datetime.utcnow()
-    timeout=int(timeout.total_seconds()/1 +1)
+    timeout=int((timeout.days*24*3600+timeout.seconds)/1 +1)
     poll_i=30
     t_res=timeout % poll_i
     timeout=timeout+poll_i-t_res
